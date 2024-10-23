@@ -1,0 +1,36 @@
+2024-10-16 15:00:43,273 ERROR: Exception on /cancel-booking/5 [POST] [in C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\views.py", line 398, in cancel_booking
+    booking.package_deal.availability += booking.num_people
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: property 'availability' of 'PackageDeal' object has no setter
+2024-10-16 15:00:53,719 ERROR: Exception on /cancel-booking/5 [POST] [in C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\views.py", line 398, in cancel_booking
+    booking.package_deal.availability += booking.num_people
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: property 'availability' of 'PackageDeal' object has no setter

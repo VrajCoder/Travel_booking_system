@@ -1,0 +1,76 @@
+2024-10-15 18:44:24,941 ERROR: Exception on /login [POST] [in C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\views.py", line 123, in login
+    return redirect(url_for('routes.home'))
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'routes.home'. Did you mean 'routes.book' instead?
+2024-10-16 09:49:17,795 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:17,796 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:17,797 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:17,798 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:21,300 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:21,300 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:21,300 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:21,300 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:22,766 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:22,766 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:22,766 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:22,766 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:23,548 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:23,548 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:23,548 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:23,560 INFO: Finished operation: Updating user profile in 0.01 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:24,264 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:24,264 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:24,264 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:24,264 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:24,700 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:24,701 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:24,702 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:24,704 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,005 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,012 INFO: Finished operation: Fetching user profile for editing in 0.01 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,014 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,015 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,345 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,345 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,345 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,345 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,667 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,667 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,667 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,667 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,995 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,995 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:25,995 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:25,995 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:26,295 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:26,310 INFO: Finished operation: Fetching user profile for editing in 0.02 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:26,312 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:26,314 INFO: Finished operation: Updating user profile in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:26,611 INFO: Starting operation: Fetching user profile for editing [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]
+2024-10-16 09:49:26,611 INFO: Finished operation: Fetching user profile for editing in 0.00 seconds [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:25]
+2024-10-16 09:49:26,611 INFO: Starting operation: Updating user profile [in C:\Users\700041\Documents\vrajesh_flask\v_project\app\context_managers.py:15]

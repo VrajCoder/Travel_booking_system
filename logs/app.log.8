@@ -1,0 +1,88 @@
+2024-10-15 18:25:16,873 ERROR: Exception on /profile [GET] [in C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\views.py", line 77, in profile
+    return render_template('profile.html', user=user, bookings=user_bookings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\base.html", line 68, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\profile.html", line 19, in block 'content'
+    <a href="{{ url_for('routes.update_profile') }}" class="btn btn-primary btn-block">Edit Profile</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'routes.update_profile'. Did you mean 'routes.profile' instead?
+2024-10-15 18:25:17,843 ERROR: Exception on /profile [GET] [in C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\views.py", line 77, in profile
+    return render_template('profile.html', user=user, bookings=user_bookings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\base.html", line 68, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\app\templates\profile.html", line 19, in block 'content'
+    <a href="{{ url_for('routes.update_profile') }}" class="btn btn-primary btn-block">Edit Profile</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\700041\Documents\vrajesh_flask\v_project\venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'routes.update_profile'. Did you mean 'routes.profile' instead?
